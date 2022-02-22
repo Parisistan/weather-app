@@ -1,5 +1,9 @@
 body {
     background-color: ivory;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -32,12 +36,13 @@ h1 {
 }
 
 .container {
-    padding: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
     border: 1px solid rgb(203, 224, 229);
-    border-radius: 150px;
+    border-radius: 100px;
     margin-left: 30%;
     margin-right: 30%;
-    max-width: 400px;
+    max-width: 600px;
     background-color: rgb(225, 244, 252);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
