@@ -13,6 +13,14 @@ let weekDays = days[currentTime.getDay()];
 let hours = currentTime.getHours();
 let minutes = currentTime.getMinutes();
 
+if (minutes < 10) {
+    minutes = `0${minutes}`;
+}
+
+if (hours < 10) {
+    hours = `0${hours}`;
+}
+
 let nowTime = document.querySelector("#now");
 nowTime.innerHTML = `${weekDays}, ${hours}:${minutes}`;
 
