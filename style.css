@@ -8,42 +8,25 @@ body {
 }
 
 h1 {
+    display: block;
     text-align: center;
     border: 1px solid rgb(219, 237, 240);
-    padding: 30px;
     border-radius: 150px;
     background-color: rgb(219, 237, 240);
     margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 500px;
+    max-width: 600px;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
 
 .search-button {
     position: relative;
-    margin-right: 30%;
     padding: 30px;
 }
 
-.city {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
-
-.temp {
-    text-align: right;
-    color: rgb(54, 54, 54);
-}
-
 .container {
-    padding-left: 200px;
-    padding-right: 200px;
-    border: 1px solid rgb(203, 224, 229);
+    border: 1px solid rgb(225, 244, 252);
     border-radius: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
     max-width: 600px;
     background-color: rgb(225, 244, 252);
     font-family: 'Raleway', sans-serif;
