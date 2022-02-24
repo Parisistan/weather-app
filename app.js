@@ -23,6 +23,9 @@ function showWeather(response) {
     );
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     console.log(response);
+    document.querySelector("#description").innerHTML = response.data.weather[0].description;
+    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+
 }
 
 function searchIt(event) {
