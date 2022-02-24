@@ -36,6 +36,11 @@ h1 {
     font-weight: 700;
 }
 
+.weather-image img {
+    width: 64px;
+    height: 64px;
+}
+
 .ending {
     font-size: x-small;
     position: relative;
