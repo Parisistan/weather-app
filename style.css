@@ -15,9 +15,9 @@ body {
 h1 {
     display: block;
     text-align: center;
-    border: 1px solid rgb(219, 237, 240);
+    border: 1px solid rgb(230, 237, 238);
     border-radius: 150px;
-    background-color: rgb(219, 237, 240);
+    background-color: rgb(230, 237, 238);
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
@@ -29,9 +29,9 @@ h1 {
 
 .container {
     display: block;
-    border: 1px solid rgb(225, 244, 252);
+    border: 1px solid rgb(230, 237, 238);
     border-radius: 100px;
-    background-color: rgb(225, 244, 252);
+    background-color: rgb(230, 237, 238);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
