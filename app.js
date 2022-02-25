@@ -47,3 +47,12 @@ function searchIt(event) {
 
 let searchingCity = document.querySelector("#search-engine");
 searchingCity.addEventListener("submit", searchIt);
+
+function showFahren(event) {
+    event.preventDefault();
+    let toFahren = (x * 9 / 5) + 32;
+
+}
+
+let fahrenheitLink = document.querySelector("#fahren");
+fahrenheitLink.addEventListener("click", showFahren);

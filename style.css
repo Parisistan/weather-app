@@ -41,6 +41,11 @@ h1 {
     height: 64px;
 }
 
+.result-city {
+    font-size: larger;
+    font-weight: 900;
+}
+
 .ending {
     font-size: x-small;
     position: relative;
