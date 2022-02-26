@@ -24,6 +24,32 @@ if (hours < 10) {
 let nowTime = document.querySelector("#now");
 nowTime.innerHTML = `${weekDays}, ${hours}:${minutes}`;
 
+function displayWeekly() {
+    let weeklyElement = document.querySelector("#weekly");
+
+    let weeklyLoop = `<div class = "row">`;
+
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    days.forEach(function(day) {
+        weeklyLoop = weeklyLoop + `
+    
+        <div class="col-2">
+            <div class="week-day">
+            ${day}
+            </div>
+                <img src="" alt="" width="45px">
+            <div class="week-day-temp">
+            <span class="highest">18º </span>
+            <span class="lowest">12º </span>
+            </div>
+        </div>`
+
+    })
+
+    weeklyLoop = weeklyLoop + `</div>`;
+    weeklyElement.innerHTML = weeklyLoop;
+}
+
 function showWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(
@@ -44,6 +70,8 @@ function searchIt(event) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showWeather);
 }
+
+displayWeekly();
 
 let searchingCity = document.querySelector("#search-engine");
 searchingCity.addEventListener("submit", searchIt);
