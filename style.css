@@ -46,6 +46,29 @@ h1 {
     font-weight: 900;
 }
 
+.weekly {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.week-day {
+    font-size: 16px;
+}
+
+.week-day-temp {
+    font-size: 13px;
+}
+
+.highest {
+    font-weight: bolder;
+}
+
+.lowest {
+    font-weight: lighter;
+    color: gray;
+}
+
 .ending {
     font-size: x-small;
     position: relative;
