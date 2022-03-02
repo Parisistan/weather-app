@@ -29,7 +29,7 @@ function formatted(timestamp) {
     let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-
+    return days[day];
 }
 
 function displayWeekly(response) {
@@ -41,28 +41,33 @@ function displayWeekly(response) {
     let weeklyLoop = `<div class = "row">`;
 
 
-    forcastDays.forEach(function(forcastDay) {
-        weeklyLoop = weeklyLoop + `
+    forcastDays.forEach(function(forcastDay, index) {
+        if (index < 6) {
+            weeklyLoop = weeklyLoop + `
     
         <div class="col-2">
             <div class="week-day">
             ${formatted(forcastDay.dt)}
             </div>
+            
                 <img 
                 src = "http://openweathermap.org/img/wn/${forcastDay.weather[0].icon}@2x.png"
                 alt=""
                 width="45px">
             <div class="week-day-temp">
-            <span class="highest"> ${forcastDay.temp.max}º </span>
-            <span class="lowest"> ${forcastDay.temp.min}º </span>
+            <span class="highest"> ${Math.round(forcastDay.temp.max)}º </span>
+            <span class="lowest"> ${Math.round(forcastDay.temp.min)}º </span>
             </div>
         </div>`
+        }
 
-    })
+    });
 
     weeklyLoop = weeklyLoop + `</div>`;
     weeklyElement.innerHTML = weeklyLoop;
+
 }
+
 
 function getWeekly(coordinates) {
 
